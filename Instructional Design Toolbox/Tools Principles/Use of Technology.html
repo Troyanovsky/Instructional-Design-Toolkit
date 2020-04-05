@@ -403,22 +403,69 @@ blockquote {
 	border-left: 3px solid rgb(55, 53, 47);
 }
 
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
 .bookmark-href {
 	font-size: 0.75em;
-	opacity: 0.5;
+	margin-top: 0.25em;
 }
 
 .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif; }
-.mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
 .pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
 
-.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
 
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
 
-.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
 
 .highlight-default {
 }
@@ -543,6 +590,16 @@ blockquote {
 .block-color-red_background {
 	background: rgb(251,228,228);
 }
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
 
 .checkbox {
 	display: inline-flex;
@@ -563,7 +620,7 @@ blockquote {
 }
 	
 </style></head><body><article id="c0db03be-daa0-46d1-b8fe-4cc36093dd2c" class="page sans"><header><h1 class="page-title">Use of Technology</h1></header><div class="page-body"><h1 id="e79abc52-caa4-459a-a003-45a9362095a1" class="">Definition</h1><p id="e0ac8892-9576-4d7b-9415-7aceb393fed7" class="">Facilitate learning and improve performance by creating, using, and managing appropriate technological processes and resources.</p><h1 id="7e579092-7f8f-4711-8abd-cbc037c0aee0" class="">Why?</h1><ul id="1d25eb6d-de4b-4d6f-a7b2-979f8bc63f58" class="bulleted-list"><li>The use of technology can facilitate learning and teaching.</li></ul><ul id="2d3362bd-114e-4776-ad84-dee24e3bef64" class="bulleted-list"><li>Technology can promote deep understanding with simulations.</li></ul><p id="f01e6e90-3240-40d6-95f6-fc97e3db4642" class="">
-</p><h1 id="0d933160-ea46-44f5-8365-ad4b024c053c" class="">How to?</h1><figure id="c913fcb2-29d7-417d-a6ea-9677f75812f0" class="link-to-page"><a href="Use%20of%20Technology/Remote%20Learning.html">Remote Learning</a></figure><h2 id="5a1b576b-9b9d-4260-9a67-628a278578d1" class="">Do</h2><ul id="06bb3e25-8b17-4222-ba3b-b142d8705c0e" class="bulleted-list"><li>Consider technology from a <strong>learner-centered perspective</strong>.<ul id="20fe1807-46ef-473c-9cde-373515144c87" class="bulleted-list"><li>Access to technology</li></ul><ul id="c839c7a4-2a96-4c97-a5a6-2e06ebb87f92" class="bulleted-list"><li>Inclusion, empowering</li></ul></li></ul><ul id="c6a0f691-be23-4a7d-a21c-c82abd3c6ac7" class="bulleted-list"><li>Be aware of the <strong>cultural assumptions/bias</strong> inherited in a technology</li></ul><ul id="7e4c5f25-7f8c-4fc1-8326-a24d3464156e" class="bulleted-list"><li>Technology can be used to provide <strong>timely and targeted </strong><a href="https://www.notion.so/Provide-Feedback-6cc7e7ad6f124802a1b8446351385e35"><strong>feedback</strong></a></li></ul><ul id="434f06ce-01ac-46ec-987f-b65e0b37c0d8" class="bulleted-list"><li>Technology can be used to <strong>monitor and assess students&#x27; progress</strong>.</li></ul><ul id="c9227f79-f3de-46fe-beeb-e4e65098b3ce" class="bulleted-list"><li><strong>Prepare students</strong> who are not familiar with new technology with additional instruction.</li></ul><ul id="eba2e318-e062-4917-af72-4c94f70cedf2" class="bulleted-list"><li>Consider technology use <strong>with respect to the students culture</strong>.</li></ul><ul id="d128195c-ca22-405a-bb9a-0375afa2ad76" class="bulleted-list"><li>Use technology <strong>as a means not as a goal</strong>.</li></ul><p id="5fecd900-b57f-443f-941d-6c72d5e5314a" class="">
+</p><h1 id="0d933160-ea46-44f5-8365-ad4b024c053c" class="">How to?</h1><figure id="15d4f652-9ffa-4743-9457-5c2b7301bb1b" class="link-to-page"><a href="Use%20of%20Technology/SAMR%20Model%20for%20Technology%20Integration.html">SAMR Model for Technology Integration</a></figure><figure id="845e81ca-c794-4cee-9b9d-6c0564a0e1aa" class="link-to-page"><a href="Use%20of%20Technology/Bloom%20s%20Digital%20Taxonomy.html">Bloom&#x27;s Digital Taxonomy</a></figure><h2 id="5a1b576b-9b9d-4260-9a67-628a278578d1" class="">Do</h2><ul id="06bb3e25-8b17-4222-ba3b-b142d8705c0e" class="bulleted-list"><li>Consider technology from a <strong>learner-centered perspective</strong>.<ul id="20fe1807-46ef-473c-9cde-373515144c87" class="bulleted-list"><li>Access to technology</li></ul><ul id="c839c7a4-2a96-4c97-a5a6-2e06ebb87f92" class="bulleted-list"><li>Inclusion, empowering</li></ul></li></ul><ul id="c6a0f691-be23-4a7d-a21c-c82abd3c6ac7" class="bulleted-list"><li>Be aware of the <strong>cultural assumptions/bias</strong> inherited in a technology</li></ul><ul id="7e4c5f25-7f8c-4fc1-8326-a24d3464156e" class="bulleted-list"><li>Technology can be used to provide <strong>timely and targeted </strong><a href="https://www.notion.so/Provide-Feedback-6cc7e7ad6f124802a1b8446351385e35"><strong>feedback</strong></a></li></ul><ul id="434f06ce-01ac-46ec-987f-b65e0b37c0d8" class="bulleted-list"><li>Technology can be used to <strong>monitor and assess students&#x27; progress</strong>.</li></ul><ul id="c9227f79-f3de-46fe-beeb-e4e65098b3ce" class="bulleted-list"><li><strong>Prepare students</strong> who are not familiar with new technology with additional instruction.</li></ul><ul id="eba2e318-e062-4917-af72-4c94f70cedf2" class="bulleted-list"><li>Consider technology use <strong>with respect to the students culture</strong>.</li></ul><ul id="d128195c-ca22-405a-bb9a-0375afa2ad76" class="bulleted-list"><li>Use technology <strong>as a means not as a goal</strong>.</li></ul><p id="5fecd900-b57f-443f-941d-6c72d5e5314a" class="">
 </p><h2 id="808da554-f7bc-4600-a5dc-266b82b163a8" class="">Do NOT</h2><ul id="357d9859-decc-45b0-b8a0-50f769a543fd" class="bulleted-list"><li>Ignore the cultural assumptions in technologies.</li></ul><ul id="c134053b-e04e-4df8-8c99-41b8d1f461a3" class="bulleted-list"><li>Assume all students are familiar with technologies.</li></ul><p id="bebc9272-d2f9-40d1-b48a-398877bdedf3" class="">
 </p><p id="d824fe51-c78b-4031-bef4-3020d2537c72" class="">
 </p></div></article></body></html>
